@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/black">
+
+        <TextView
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:text=""
+            android:layout_margin="20dp"
+            android:textSize="50dp"
+            />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:layout_margin="20dp"
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/buttonNumber"
+            android:text="AC"
+            android:textColor="@color/blue">
+        </Button>
+
+        <Button
+            style="@style/buttonNumber">
+        </Button>
+
+        <Button
+            android:id="@+id/btnBS"
+            style="@style/buttonNumber"
+            android:text="⌫"
+            android:textColor="@color/blue">
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/btnI"
+            style="@style/buttonNumber"
+            android:text="I">
+        </Button>
+
+        <Button
+            android:id="@+id/btnV"
+            style="@style/buttonNumber"
+            android:text="V">
+        </Button>
+
+        <Button
+            android:id="@+id/btnX"
+            style="@style/buttonNumber"
+            android:text="X">
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/btnL"
+            style="@style/buttonNumber"
+            android:text="L">
+        </Button>
+
+        <Button
+            android:id="@+id/btnC"
+            style="@style/buttonNumber"
+            android:text="C">
+        </Button>
+
+        <Button
+            android:id="@+id/btnD"
+            style="@style/buttonNumber"
+            android:text="D">
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/buttonRow">
+
+        <Button
+            android:id="@+id/btnM"
+            style="@style/buttonNumber"
+            android:text="M">
+        </Button>
+
+        <Button
+            android:id="@+id/btnConvert"
+            style="@style/buttonNumber"
+            android:text="Convert"
+            android:layout_weight="2"
+            android:textColor="@color/blue">
+        </Button>
+
+
+    </LinearLayout>
+</LinearLayout>
